@@ -1,0 +1,27 @@
+﻿
+
+
+
+@model Catogery
+<div class="container">
+
+    <form action="/Catogery/SaveEdit">
+
+        <input type="hidden" name="Id" value="@Model.Id" />
+
+    
+
+        <div class="mb-3">
+            <label for="Name" class="form-label">CatogeryName</label>
+            <input type="text" class="form-control" value="@Model.Name" id="Name" name="Name">
+        </div>
+        <div class="mb-3">
+            <label for="Description" class="form-label">CatogeryDescription</label>
+            <input type="text" value="@Model.Description" class="form-control" id="Description" name="Description">
+        </div>
+
+        <button type="submit" class="btn btn-primary">submit</button>
+
+
+
+    </form>
